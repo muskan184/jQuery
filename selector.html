@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <!-- <button id="btn">click me</button>
+    <div id="test"></div>
+    <script>
+      $(document).ready(function () {
+        $("#test").text("hello wotld");
+        $("#btn").click(function () {
+          $("#test").toggle();
+        });
+      });
+    </script> -->
+
+    <!-- jquery selector
+    <p class="test" style="background-color: green; color: white">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, vitae.
+      Modi, hic. Quam fugit ratione cumque, deserunt minus inventore neque
+      magnam totam tenetur quisquam iusto veniam nobis, ducimus similique
+      facere.
+    </p>
+    <br />
+    <p class="test2" style="background-color: rgb(186, 186, 12); color: white">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, vitae.
+      Modi, hic. Quam fugit ratione cumque, deserunt minus inventore neque
+      magnam totam tenetur quisquam iusto veniam nobis, ducimus similique
+      facere.
+    </p>
+    <br />
+    <ul>
+      <li style="background-color: purple; color: white">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+        doloribus. Blanditiis doloremque laboriosam provident nobis tempora!
+        Sint dicta tempore possimus!
+      </li>
+      <li style="background-color: blue; color: white">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+        doloribus. Blanditiis doloremque laboriosam provident nobis tempora!
+        Sint dicta tempore possimus!
+      </li>
+
+      <button
+        id="hideandseek"
+        style="
+          background-color: purple;
+          color: white;
+          border: none;
+          margin-top: 10px;
+          padding: 10px;
+        "
+      >
+        click me
+      </button>
+    </ul>
+    <script>
+      $(document).ready(function () {
+        $("#hideandseek").click(function () {
+          $("li:last").hide();
+        });
+      });
+    </script> -->
+
+    <!-- css in jquery -->
+    <!-- syntax: css("propertyname","value");<br />
+    <a href="#" id="anchor">welcome to my channale </a><br />
+    <button id="jquerycss">click me</button>
+    <script>
+      $(document).ready(function () {
+        $("#jquerycss").click(function () {
+          // $("#anchor").css("textDecoration", "none");
+          $("#anchor").css({ textDecoration: "none", backgoundColor: "red" });
+        });
+      });
+    </script> -->
+
+    <!-- advance selector -->
+    <div style="width: 50%; margin: auto">
+      <ul type="1" style="list-style: none">
+        <li>index0: javascript</li>
+        <li>index 1: agular</li>
+        <li>index 2: bootstrap</li>
+        <li>index 3: jquery</li>
+      </ul>
+      <button id="btn_id">click me</button>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#btn_id").click(function () {
+          // $(this).css("backgroundColor", "red"); only button will be red
+          // $("[type]").hide("slow"); attritute tracker
+          // $("li:even").css("color", "red");
+          // $("li:odd").css("color", "red");
+          // $("li:first-child").css("color", "red");
+          // $("li:nth-child(3)").css("color", "red"); form top
+          // $("li:nth-last-child(3)").css("color", "red"); from bottom
+        });
+      });
+    </script>
+  </body>
+</html>

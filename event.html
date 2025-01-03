@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>jquery</title>
+    <style>
+      .main {
+        display: flex;
+      }
+      .red {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+      .blue {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- events -->
+    <!-- click event -->
+    <!-- <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nesciunt et
+      repellendus tenetur quo qui esse fuga autem officiis suscipit aut facere
+      natus, obcaecati accusantium, nobis architecto culpa laborum neque, rerum
+      earum harum sit aspernatur voluptate voluptates! Minus vero recusandae,
+      quibusdam, doloribus in adipisci ea impedit quae, animi ratione incidunt?
+    </p>
+    <button id="idbtn">click me</button>
+    <script>
+      $(document).ready(function () {
+        $("#idbtn").click(function () {
+          $("p").css("color", "blue");
+        });
+      });
+    </script> -->
+    <div class="main">
+      <div class="red"></div>
+      <div class="red"></div>
+      <div class="red"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+    </div>
+    <button id="btn_id">Show/Hide</button>
+    <script>
+      $(document).ready(function () {
+        $(".red").css("backgroundColor", "red");
+        $(".blue").css("backgroundColor", "blue");
+        $("#btn_id").click(function () {
+          $(".red,.blue").hide("slow");
+        });
+        $("#btn_id").dblclick(function () {
+          $(".red,.blue").show("slow");
+        });
+      });
+    </script>
+
+    <!-- keyboard event -->
+    <!-- keypress,keydown,keyup -->
+    <!-- <form action="">
+      <label for="">username</label>
+      <input type="text" name="muskan" />
+    </form>
+    <script>
+      $(document).ready(function () {
+        $("input").keyup(function () {
+          $(this).css("backgroundColor", "blue");
+        });
+      });
+    </script> -->
+
+    <!-- mouse event -->
+    <!--  mouseenter,mouseleave,mousedown,mouseup -->
+    <!-- <p>hii welcome to mouse event</p>
+    <script>
+      $(document).ready(function () {
+        $("p").mousel(function () {
+          $(this).css("color", "blue");
+        });
+      });
+    </script> -->
+
+    <!-- focus ND BLUR event -->
+    <!-- <h2>focus() vs blur()</h2>
+    <input type="text" name="" id="textbox" />
+    <span id="showdata">Welcome</span>
+    <span id="showdataforblur"> TakeCare</span>
+
+    <script>
+      $(document).ready(function () {
+        $("span").css("display", "none");
+        $("#textbox").focus(function () {
+          $("#showdata").css("display", "inline");
+          fadeOut(4000);
+          $("#textbox").blur(function () {
+            // $("#showdata").css("display", "none");
+            $("#showdataforblur").css("display", "inline");
+            // fadeOut(4000);
+          });
+        });
+      });
+    </script> -->
+  </body>
+</html>

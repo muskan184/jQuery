@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DatePicker</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <h1 style="text-transform: uppercase; text-align: center">
+      Enter your BioData
+    </h1>
+    <form action="">
+      <fieldset>
+        <legend
+          align="bottom"
+          style="text-transform: uppercase; font-size: 1.6em"
+        >
+          BioData
+        </legend>
+        Name:
+        <input
+          type="text"
+          size="30"
+          class="form-control"
+          placeholder="username"
+        />
+        <br />
+        <br />
+        Email:
+        <input
+          type="text"
+          size="30"
+          class="form-control"
+          placeholder="abc@abc.com"
+        />
+        <br /><br />
+        D O B:
+        <input type="text" size="30" class="form-control" id="datepicker" />
+        <br /><br />
+        <input type="submit" name="" />
+      </fieldset>
+    </form>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#datepicker").datepicker();
+      });
+    </script>
+  </body>
+</html>

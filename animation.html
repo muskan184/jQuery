@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <style>
+      h1 {
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .animateDiv {
+        width: 90px;
+        height: 90px;
+        position: relative;
+        background-color: red;
+        border: 1px solid black;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <h1>jquery animate method</h1>
+    <h2>
+      the animate() method perform a custom animation os a set of css properties
+    </h2>
+    <button id="btnClick">showjadu</button>
+    <br /><br />
+    <div class="animateDiv"></div>
+
+    <script>
+      $(document).ready(function () {
+        $("#btnClick").click(function () {
+          $(".animateDiv").animate({
+            left: 500,
+          });
+          $(".animateDiv").animate({
+            top: 200,
+            width: 98 / 2,
+            height: 90 / 2,
+          });
+          $(".animateDiv").animate({
+            top: 200,
+            left: 0,
+
+            width: 198 / 2,
+            height: 190 / 2,
+          });
+          $(".animateDiv").animate({
+            top: 0,
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

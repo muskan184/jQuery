@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>toggle</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- <style>
+      .main {
+        display: flex;
+      }
+      .red {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+      .blue {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+    </style> -->
+
+    <!-- <style>
+      #panel,
+      #flip {
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+      }
+      #panel {
+        padding: 50px;
+        display: none;
+      }
+      h1 {
+        text-align: center;
+        color: red;
+        text-transform: uppercase;
+        font-size: 3em;
+      }
+    </style> -->
+
+    <style>
+      .centerdiv {
+        width: 500px;
+        height: 350px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #firstDiv {
+        width: 200px;
+        height: 100px;
+        background-color: red;
+      }
+      #firstDiv2 {
+        width: 200px;
+        height: 100px;
+        background-color: blue;
+      }
+      #firstDiv3 {
+        width: 200px;
+        height: 100px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- toggle effect -->
+    <!-- <div class="main">
+      <div class="red"></div>
+      <div class="red"></div>
+      <div class="red"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+    </div>
+    <button id="btn_id">Show/Hide</button>
+    <script>
+      $(document).ready(function () {
+        $(".red").css("backgroundColor", "red");
+        $(".blue").css("backgroundColor", "blue");
+        // $("#btn_id").click(function () {
+        //   $(".red,.blue").hide("slow");
+        // });
+        // $("#btn_id").dblclick(function () {
+        //   $(".red,.blue").show("slow");
+        // });
+        $("#btn_id").click(function () {
+          $(".main").toggle("slow");
+        });
+      });
+    </script> -->
+
+    <!-- slider effect -->
+    <!-- sliderdown and  sliderup-->
+    <!-- <h1>SlideDown and slideUp Effect in jquery</h1>
+    <div id="flip">Click to slide down panel</div>
+    <div id="panel">Hello World!</div>
+
+    <script>
+      $(document).ready(function () {
+        // $("#flip").click(function () {
+        //   $("#panel").slideDown("slow");
+        // });
+
+        // $("#flip").dblclick(function () {
+        //   $("#panel").slideUp("slow");
+        // });
+        $("#flip").click(function () {
+          $("#panel").slideToggle("slow");
+        });
+      });
+    </script> -->
+
+    <!--fading effect  -->
+    <div class="centerdiv">
+      <button id="btnfadeout">fadeOut</button>
+      <button id="btnfadein">fadeIn</button>
+      <br />
+      <div id="firstDiv"></div>
+      <br />
+      <div id="firstDiv2"></div>
+      <br />
+      <div id="firstDiv3"></div>
+      <br />
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#btnfadeout").click(function () {
+          $("#firstDiv").fadeToggle();
+          $("#firstDiv2").fadeToggle("slow");
+          $("#firstDiv3").fadeToggle(3000);
+        });
+        $("#btnfadein").click(function () {
+          $("#firstDiv").fadeIn();
+          $("#firstDiv2").fadeIn("slow");
+          $("#firstDiv3").fadeIn(3000);
+        });
+      });
+    </script>
+  </body>
+</html>
